@@ -979,10 +979,10 @@ if(un==TRUE){
     
   if(pt==TRUE){
     fileout <- tempfile(pattern="InventarioFlorestal", fileext=".docx")
-    message(doc, target = fileout)
+    print(doc, target = fileout)
   }else{
     fileout <- tempfile(pattern="ForestInventory", fileext=".docx")
-    message(doc, target = fileout)
+    print(doc, target = fileout)
   }
   }
   
@@ -1273,10 +1273,10 @@ curve <- ggplot(h, aes(x=p, y=r, color=strat, fill=strat))+
       
     if(pt==TRUE){
       fileout <- tempfile(pattern="InventarioFlorestal", fileext=".docx")
-      message(doc, target = fileout)
+      print(doc, target = fileout)
     }else{
       fileout <- tempfile(pattern="ForestInventory", fileext=".docx")
-      message(doc, target = fileout)
+      print(doc, target = fileout)
     }
     }
 
@@ -1496,10 +1496,10 @@ if(!(is.null(prot))){
       
   if(pt==TRUE){
     fileout <- tempfile(pattern="InventarioFlorestal", fileext=".docx")
-    message(doc, target = fileout)
+    print(doc, target = fileout)
   }else{
     fileout <- tempfile(pattern="ForestInventory", fileext=".docx")
-    message(doc, target = fileout)
+    print(doc, target = fileout)
   }
 }
 }
