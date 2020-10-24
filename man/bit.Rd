@@ -13,7 +13,7 @@ bit(x,A,k,E=0.1,p=0.05,ampl=2,rn=FALSE,pt=TRUE,save=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{A data frame with six columns: sample points in the first (in numerals), numbering of individuals in the second (in numerals), height in the third (in meters), diameter in the fourth (in centimeters), radial distance in the fifth (in meters) and volume in the last (in cubic meters).}
+  \item{x}{A data frame with seven columns: sample points in the first (in numerals), numbering of individuals in the second (in numerals), species in the third, height in the fourth (in meters), diameter in the fifth (in centimeters), radial distance in the sixth (in meters) and volume in the seventh (in cubic meters).}
   \item{A}{Total area, in hectares.}
   \item{k}{Basal area factor.}
   \item{E}{Required error, in decimal value. Default is 0.1.}
@@ -21,12 +21,12 @@ bit(x,A,k,E=0.1,p=0.05,ampl=2,rn=FALSE,pt=TRUE,save=TRUE)
   \item{ampl}{Amplitude of diameter class range. Default is 2.}
   \item{rn}{Logical argument. If TRUE, calculates the sample intensity once again, with the degrees of freedom from the previous result.}
  \item{pt}{Logical argument. If TRUE (default), the language of the outputs is Portuguese. If FALSE, the language is English.}
- \item{save}{Logical argument. If TRUE (default), a docx file will be saved in the temporary files directory (run 'tempfile ()') (if save=TRUE) with the generated tables and graphics.}
+ \item{save}{Logical argument. If TRUE (default), a docx file will be saved in the temporary files directory (run 'tempdir()') (if save=TRUE) with the generated tables and graphics.}
 
 }
 
 \value{
-A list of tables and graphs, and a docx file saved in the temporary files directory (run 'tempfile ()') (if save=TRUE). The console displays the sampling intensity.
+A list of tables and graphs, and a docx file saved in the temporary files directory (run 'tempdir()') (if save=TRUE). The console displays the sampling intensity.
 }
 \references{
 Bitterlich, W. (1948). Die Winkelzahlprobe. Allg. Forst-u. Holzwirtsch. Ztg., 59 (1/2): 4-5.

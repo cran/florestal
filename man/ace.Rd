@@ -8,7 +8,7 @@ Stratified Casual Sampling and Phytosociological Parameters
 Calculates the stratified casual and phytosociological sampling parameters.
 }
 \usage{
-ace(x,a,aj,E=0.1,p=0.05,ampl=5,prot=NULL,prop=F,rn=F,spivi=15,un=F,pt=T,save=T)
+ace(x,a,aj,E=0.1,p=0.05,ampl=2,prot=NULL,prop=F,rn=F,spivi=15,un=F,pt=T,save=T)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,19 +17,19 @@ ace(x,a,aj,E=0.1,p=0.05,ampl=5,prot=NULL,prop=F,rn=F,spivi=15,un=F,pt=T,save=T)
   \item{aj}{Area of each stratum, in hectares.}
   \item{E}{Required error, in decimal value. Default is 0.1.}
   \item{p}{Significance level, in decimal value. Default is 0.05.}
-  \item{ampl}{Amplitude of diameter class range. Default is 5.}
+  \item{ampl}{Amplitude of diameter class range. Default is 2.}
   \item{prot}{Protected species.}
   \item{prop}{Logical argument. If FALSE (default), the allocation of plots by stratum will follow Neyman's optimal allocation method. If TRUE, will follow the proportional allocation by area.}
   \item{rn}{Logical argument. If TRUE, calculates the sample intensity once again, with the degrees of freedom from the previous result.}
     \item{spivi}{number of species in the IVI plot. Default is 15.} 
     \item{un}{Logical argument. If TRUE, the species column have an unique specie, as a planted forest. If FALSE (default), have multiple species (more than one).}
     \item{pt}{Logical argument. If TRUE (default), the language of the outputs is Portuguese. If FALSE, the language is English.}
-    \item{save}{Logical argument. If TRUE (default), a docx file will be saved in the temporary files directory (run 'tempfile ()') (if save=TRUE) with the generated tables and graphics.}
+    \item{save}{Logical argument. If TRUE (default), a docx file will be saved in the temporary files directory (run 'tempdir()') (if save=TRUE) with the generated tables and graphics.}
 
 }
 
 \value{
-A list of tables and graphs, and a docx file saved in the temporary files directory (run 'tempfile ()') (if save=TRUE). The console displays the sampling intensity and whether there is significant difference between the strata from the F test of the single-factor ANOVA and a Tukey's test for significant differences between strata, with 95 per cent confidence.
+A list of tables and graphs, and a docx file saved in the temporary files directory (run 'tempdir()') (if save=TRUE). The console displays the sampling intensity and whether there is significant difference between the strata from the F test of the single-factor ANOVA and a Tukey's test for significant differences between strata, with 95 per cent confidence.
 
 }
 \references{
